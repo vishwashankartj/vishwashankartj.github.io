@@ -2560,11 +2560,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style4 .icon.major:before {
-					color:  #ebb239;
+					color:  #ff7e05;
 				}
 
 				.wrapper.style4-alt .icon.major:before {
-					color: #dd911f;
+					color: #ff9306;
 				}
 
 /* Image */
@@ -3272,11 +3272,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style4 {
-			background-color: #ebb239;
+			background-color: #19816b;
 		}
 
 		.wrapper.style4-alt {
-			background-color: #dd911f;
+			background-color: #d88912;
 		}
 
 		.wrapper.fullscreen {
@@ -3923,3 +3923,20 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* column, row */
+
+
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+		  }
+		  
+		  /* Clear floats after the columns */
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		  }
