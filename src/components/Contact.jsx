@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
@@ -14,6 +14,11 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('yf0porVu4NEacj6TF');
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

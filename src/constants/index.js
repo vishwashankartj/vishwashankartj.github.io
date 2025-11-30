@@ -54,50 +54,35 @@ const services = [
     icon: prototyping,
   },
   {
-    title: 'ML Engineer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
+    title: 'LLM Expert',
     icon: ux,
   },
 ];
 
-const technologies = [
-  {
-    name: 'PostgreSQL',
-    icon: postgresql,
-  },
-  {
-    name: 'Docker',
-    icon: docker,
-  },
-  {
-    name: 'Git',
-    icon: git,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'GraphQL',
-    icon: graphql,
-  },
-  // Note: Add icons for Python, PySpark, AWS, etc. when available
-];
+const technologies = {
+  databases: [
+    { name: 'PostgreSQL', icon: postgresql },
+  ],
+  dataServices: [
+    { name: 'Docker', icon: docker },
+    { name: 'Git', icon: git },
+  ],
+  cloud: [
+    { name: 'AWS', text: true },
+    { name: 'ByteCloud', text: true },
+  ],
+  llm: [
+    { name: 'LangGraph', text: true },
+    { name: 'RAG', text: true },
+  ],
+  web: [
+    { name: 'Node.js', icon: nodejs },
+    { name: 'React', icon: reactjs },
+    { name: 'TypeScript', icon: typescript },
+    { name: 'GraphQL', icon: graphql },
+    { name: 'JavaScript', icon: javascript },
+  ],
+};
 
 const experiences = [
   {
@@ -154,6 +139,7 @@ const experiences = [
 
 const projects = [
   {
+    id: 'project-1',
     name: 'Twitter Bot Detection',
     description:
       'Designed a classification model to predict and detect twitter bots using network analysis. Incorporated NetworkX, Graph2Vec libraries to analyze the network graph feature embedding.',
@@ -171,11 +157,12 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult, // Placeholder
+    image: komikult,
     repo: 'https://github.com/vishwashankartj',
     demo: 'https://vishwashankartj.github.io/',
   },
   {
+    id: 'project-2',
     name: 'Ranking Image Captions',
     description:
       'Implemented an end-to-end Python framework using TensorFlow and NLTK to rank captions by image relevance. Trained CNN and Word2Vec models to extract image and semantic features.',
@@ -198,6 +185,7 @@ const projects = [
     demo: 'https://vishwashankartj.github.io/',
   },
   {
+    id: 'project-3',
     name: 'Adversarial Attacks on DNN',
     description:
       'Implemented a black-box attack on target model and created a substitute model to learn the target model\'s weights. Achieved a test accuracy of 82% on adversarial data.',
@@ -220,6 +208,7 @@ const projects = [
     demo: 'https://vishwashankartj.github.io/',
   },
   {
+    id: 'project-4',
     name: 'Sleep Stage Prediction',
     description:
       'Designed a model to predict sleep levels using EEG, EOG and EMG medical data. Developed a LSTM time-series deep learning model achieving 85% accuracy.',
