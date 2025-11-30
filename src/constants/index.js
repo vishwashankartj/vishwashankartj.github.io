@@ -46,225 +46,189 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
+    title: 'Data Scientist',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
+    title: 'Data Engineer',
+    icon: prototyping,
   },
   {
-    title: 'Software Prototyping',
-    icon: prototyping,
+    title: 'LLM Expert',
+    icon: ux,
   },
 ];
 
-const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
-];
+const technologies = {
+  databases: [
+    { name: 'PostgreSQL', icon: postgresql },
+  ],
+  dataServices: [
+    { name: 'Docker', icon: docker },
+    { name: 'Git', icon: git },
+  ],
+  cloud: [
+    { name: 'AWS', text: true },
+    { name: 'ByteCloud', text: true },
+  ],
+  llm: [
+    { name: 'LangGraph', text: true },
+    { name: 'RAG', text: true },
+  ],
+  web: [
+    { name: 'Node.js', icon: nodejs },
+    { name: 'React', icon: reactjs },
+    { name: 'TypeScript', icon: typescript },
+    { name: 'GraphQL', icon: graphql },
+    { name: 'JavaScript', icon: javascript },
+  ],
+};
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Senior Data Scientist',
+    company_name: 'TikTok',
+    icon: coverhunt, // Placeholder icon
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Feb 2024 - Present',
+    points: [
+      'Designed and deployed a community detection algorithm to cluster over 150M+ users, IP addresses, and government-issued IDs, improving financial crime investigation coverage by 65% and reducing investigation time by 30%.',
+      'Built a custom graph traversal algorithm to surface high-risk sub-networks among suspicious entities, accelerating triage for flagged accounts and contributing to a 45% increase in detection of coordinated fraud patterns.',
+      'Developed and productionized anomaly detection models using Isolation Forest, assigning dynamic risk scores to 500M+ users, transactions/month in the TikTok Live network.',
+      'Deployed LLM models and vector embeddings using ByteCloud containers on NVIDIA A100 GPUs, exposing them as low-latency API endpoints.',
+      'Built a Retrieval-Augmented Generation (RAG) LLM chatbot to generate automated investigative reports from scored and traversed high-risk networks.',
+    ],
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Data Scientist/Engineer',
+    company_name: 'ADP Inc.',
+    icon: microverse, // Placeholder icon
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'July 2021 - Feb 2024',
+    points: [
+      'Designed and developed complex ETL workflows, data pipelines using Databricks, AWS State Machines, and Glue to streamline data processing from diverse sources into a centralized data lake.',
+      'Automated ETL orchestration with AWS Step Functions, S3 Aurora tables, DynamoDB. Optimizing performance, efficiency by 70%.',
+      'Built real-time text classification models using AWS SageMaker for earnings, deductions, and other use cases.',
+      'Enhanced storage efficiency with data partitioning strategies in S3 and Aurora, and implemented automated data quality checks in PySpark-Databricks.',
+    ],
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Data Science Intern',
+    company_name: 'Internship',
+    icon: kelhel, // Placeholder icon
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'June 2020 - Aug 2020',
+    points: [
+      'Optimized the caching strategy of a data retrieval system by using NLP techniques on unstructured network queries.',
+      'Performed advanced analytics using Python to obtain network and user features.',
+      'Designed prototypes and obtained additional features using Graph Clustering and Community Detection methods.',
+    ],
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
+    title: 'Software Developer Intern',
+    company_name: 'Infosys Ltd.',
+    icon: dcc, // Placeholder icon
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Dec 2018 - May 2019',
+    points: [
+      'Developed a web application for the security department to handle employee complaints, integrating OracleDB, Spring, REST APIs, and Angular 4.',
+      'Delivered the project within 80% of the proposed duration using agile methodology, significantly enhancing complaint resolution efficiency.',
+    ],
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Twitter Bot Detection',
+    description:
+      'Designed a classification model to predict and detect twitter bots using network analysis. Incorporated NetworkX, Graph2Vec libraries to analyze the network graph feature embedding.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'graph-analytics',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'networkx',
         color: 'pink-text-gradient',
       },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/vishwashankartj',
+    demo: 'https://vishwashankartj.github.io/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Ranking Image Captions',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Implemented an end-to-end Python framework using TensorFlow and NLTK to rank captions by image relevance. Trained CNN and Word2Vec models to extract image and semantic features.',
     tags: [
       {
-        name: 'react',
+        name: 'tensorflow',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'deep-learning',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'nlp',
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: leaderboard, // Placeholder
+    repo: 'https://github.com/vishwashankartj',
+    demo: 'https://vishwashankartj.github.io/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Adversarial Attacks on DNN',
+    description:
+      'Implemented a black-box attack on target model and created a substitute model to learn the target model\'s weights. Achieved a test accuracy of 82% on adversarial data.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'pytorch',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'security',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'ai',
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: math, // Placeholder
+    repo: 'https://github.com/vishwashankartj',
+    demo: 'https://vishwashankartj.github.io/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Sleep Stage Prediction',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'Designed a model to predict sleep levels using EEG, EOG and EMG medical data. Developed a LSTM time-series deep learning model achieving 85% accuracy.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'lstm',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'healthcare',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'time-series',
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: movie, // Placeholder
+    repo: 'https://github.com/vishwashankartj',
+    demo: 'https://vishwashankartj.github.io/',
   },
 ];
 

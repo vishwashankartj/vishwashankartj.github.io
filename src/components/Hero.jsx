@@ -42,12 +42,13 @@ const Hero = () => {
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Shaquille
+                Vishwashankar
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
+              Data Scientist | Data Engineer <br className="sm:block hidden" />
+              <br className="block" />
+              LLM Expert (RAG & Agentic AI)
             </p>
           </div>
           <div
@@ -59,7 +60,7 @@ const Hero = () => {
 
         <div
           className="absolute xs:bottom-10 bottom-32 w-full 
-          flex justify-center items-center">
+          flex justify-center items-center z-10">
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
@@ -81,13 +82,15 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div>
+        <div className="absolute bottom-0 right-0 
+          w-full h-[40vh] md:w-[45vw] md:h-[80vh] 
+          overflow-hidden">
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="absolute bottom-0 right-0 
+              h-full w-auto object-contain object-bottom
+              max-w-none"
             src={shaq}
-            alt="shaquille"
+            alt="vishwashankar"
           />
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
@@ -15,6 +15,11 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('yf0porVu4NEacj6TF');
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -29,16 +34,16 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_bv3m9yn',
+        'template_uvjv4j1',
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Vishwashankar',
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'vishwashankar.janakiraman@gmail.com',
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'yf0porVu4NEacj6TF'
       )
       .then(
         () => {
