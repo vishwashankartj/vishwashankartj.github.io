@@ -19,7 +19,7 @@ import downloadHover from './icons/downloadHover.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
-import resume from './icons/resume.png';
+import resume from './Resume_Vishwashankar_Data.pdf';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
