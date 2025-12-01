@@ -37,11 +37,32 @@ import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
+import hive from './tech/hive.png';
+import mongodb from './tech/mongodb.png';
+import elasticsearch from './tech/elasticsearch.png';
+import mysql from './tech/mysql.png';
+import redis from './tech/redis.png';
+import neo4j from './tech/neo4j.png';
+import databricks from './tech/databricks.png';
+import snowflake from './tech/snowflake.png';
+import tableau from './tech/tableau.png';
+import aws from './tech/aws.png';
+import langchain from './tech/langchain.png';
+import llamaindex from './tech/llamaindex.png';
+import fastapi from './tech/fastapi.png';
+import angular from './tech/angular.png';
+import dataleap from './tech/dataleap.png';
+import bytecloud from './tech/bytecloud.png';
+import langgraph from './tech/langgraph.png';
+import openwebui from './tech/openwebui.png';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import tiktok from './company/tiktok.png';
+import adp from './company/adp.png';
+import infosys from './company/infosys.png';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -86,6 +107,24 @@ export {
   redux,
   tailwind,
   typescript,
+  hive,
+  mongodb,
+  elasticsearch,
+  mysql,
+  redis,
+  neo4j,
+  databricks,
+  snowflake,
+  tableau,
+  aws,
+  langchain,
+  llamaindex,
+  fastapi,
+  angular,
+  dataleap,
+  bytecloud,
+  langgraph,
+  openwebui,
   komikult,
   leaderboard,
   math,
@@ -96,4 +135,7 @@ export {
   dcc,
   kelhel,
   microverse,
+  tiktok,
+  adp,
+  infosys,
 };

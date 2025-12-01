@@ -17,6 +17,24 @@ import {
   postgresql,
   rubyrails,
   graphql,
+  hive,
+  mongodb,
+  elasticsearch,
+  mysql,
+  redis,
+  neo4j,
+  databricks,
+  snowflake,
+  tableau,
+  aws,
+  langchain,
+  llamaindex,
+  fastapi,
+  angular,
+  dataleap,
+  bytecloud,
+  langgraph,
+  openwebui,
   komikult,
   leaderboard,
   math,
@@ -27,6 +45,9 @@ import {
   dcc,
   kelhel,
   microverse,
+  tiktok,
+  adp,
+  infosys,
 } from '../assets';
 
 export const navLinks = [
@@ -61,26 +82,37 @@ const services = [
 
 const technologies = {
   databases: [
+    { name: 'Hive', icon: hive },
     { name: 'PostgreSQL', icon: postgresql },
+    { name: 'MongoDB', icon: mongodb },
+    { name: 'ElasticSearch', icon: elasticsearch },
+    { name: 'MySQL', icon: mysql },
+    { name: 'Redis', icon: redis },
+    { name: 'Neo4j', icon: neo4j },
+    { name: 'GraphQL', icon: graphql },
   ],
   dataServices: [
-    { name: 'Docker', icon: docker },
-    { name: 'Git', icon: git },
+    { name: 'Databricks', icon: databricks },
+    { name: 'Dataleap', icon: dataleap },
+    { name: 'Snowflake', icon: snowflake },
+    { name: 'Tableau', icon: tableau },
   ],
   cloud: [
-    { name: 'AWS', text: true },
-    { name: 'ByteCloud', text: true },
+    { name: 'AWS', icon: aws },
+    { name: 'ByteCloud', icon: bytecloud },
   ],
   llm: [
-    { name: 'LangGraph', text: true },
-    { name: 'RAG', text: true },
+    { name: 'LangGraph', icon: langgraph },
+    { name: 'LangChain', icon: langchain },
+    { name: 'LlamaIndex', icon: llamaindex },
+    { name: 'OpenWebUI', icon: openwebui },
   ],
-  web: [
+  development: [
+    { name: 'FastAPI', icon: fastapi },
     { name: 'Node.js', icon: nodejs },
-    { name: 'React', icon: reactjs },
-    { name: 'TypeScript', icon: typescript },
-    { name: 'GraphQL', icon: graphql },
-    { name: 'JavaScript', icon: javascript },
+    { name: 'Angular', icon: angular },
+    { name: 'Docker', icon: docker },
+    { name: 'Git', icon: git },
   ],
 };
 
@@ -88,7 +120,7 @@ const experiences = [
   {
     title: 'Senior Data Scientist',
     company_name: 'TikTok',
-    icon: coverhunt, // Placeholder icon
+    icon: tiktok,
     iconBg: '#333333',
     date: 'Feb 2024 - Present',
     points: [
@@ -102,7 +134,7 @@ const experiences = [
   {
     title: 'Data Scientist/Engineer',
     company_name: 'ADP Inc.',
-    icon: microverse, // Placeholder icon
+    icon: adp,
     iconBg: '#333333',
     date: 'July 2021 - Feb 2024',
     points: [
@@ -114,8 +146,8 @@ const experiences = [
   },
   {
     title: 'Data Science Intern',
-    company_name: 'Internship',
-    icon: kelhel, // Placeholder icon
+    company_name: 'ADP Inc.',
+    icon: adp,
     iconBg: '#333333',
     date: 'June 2020 - Aug 2020',
     points: [
@@ -127,7 +159,7 @@ const experiences = [
   {
     title: 'Software Developer Intern',
     company_name: 'Infosys Ltd.',
-    icon: dcc, // Placeholder icon
+    icon: infosys,
     iconBg: '#333333',
     date: 'Dec 2018 - May 2019',
     points: [
