@@ -25,9 +25,8 @@ const Hero = () => {
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden">
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
-          max-w-7xl mx-auto flex flex-row items-start
+          className={`absolute inset-0 top-[150px] 
+          max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start
           justify-between gap-3`}>
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
@@ -39,16 +38,17 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
               Hi, I'm{' '}
               <span
-                className="sm:text-battleGray sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
+                className="sm:text-battleGray sm:text-[35px] md:text-[40px] xmd:text-[60px] lg:text-[75px] xl:text-[90px]
+                text-eerieBlack text-[35px] font-mova
                 font-extrabold uppercase">
                 Vishwashankar
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Data Scientist | Data Engineer <br className="sm:block hidden" />
+              I Build Scalable Data Systems and <br className="sm:block hidden" />
+              Intelligent LLM Applications.
               <br className="block" />
-              LLM Expert (RAG & Agentic AI)
+              <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Data Engineer</span>
             </p>
           </div>
           <div
@@ -83,7 +83,7 @@ const Hero = () => {
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div className="absolute bottom-0 right-0 
-          w-full h-[40vh] md:w-[45vw] md:h-[80vh] 
+          w-full h-[40vh] md:w-[45vw] md:h-[50vh] lg:h-[80vh]
           overflow-hidden">
           <img
             className="absolute bottom-0 right-0 

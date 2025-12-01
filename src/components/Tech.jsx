@@ -23,21 +23,21 @@ const Tech = () => {
       <div className="mt-14 space-y-10">
         {categories.map((category) => (
           <div key={category.key}>
-            <h3 className="text-white text-xl font-semibold mb-6">
+            <h3 className="text-white text-xl font-semibold mb-6 text-center">
               {category.title}
             </h3>
-            <div className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
               {technologies[category.key]?.map((technology) => (
                 <div
-                  className="w-28 flex flex-col items-center justify-center group"
+                  className="w-20 sm:w-28 flex flex-col items-center justify-center group"
                   key={technology.name}>
                   {technology.icon && !technology.text ? (
                     <>
-                      <div className="w-28 h-28 rounded-full flex justify-center items-center shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2),inset_10px_10px_20px_rgba(255,255,255,0.8),5px_5px_15px_rgba(0,0,0,0.3)] bg-gradient-to-br from-white via-[#e0e0e0] to-[#b0b0b0] transition-transform duration-300 group-hover:scale-110 overflow-hidden">
+                      <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full flex justify-center items-center shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2),inset_10px_10px_20px_rgba(255,255,255,0.8),5px_5px_15px_rgba(0,0,0,0.3)] bg-gradient-to-br from-white via-[#e0e0e0] to-[#b0b0b0] transition-transform duration-300 group-hover:scale-110 overflow-hidden">
                         <img
                           src={technology.icon}
                           alt={technology.name}
-                          className="w-20 h-20 object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                          className="w-12 h-12 sm:w-20 sm:h-20 object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
                       <p className="text-secondary text-center text-sm mt-2 font-semibold">

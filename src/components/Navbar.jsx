@@ -34,12 +34,12 @@ const Navbar = () => {
             className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
           />
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+        <ul className="list-none hidden md:flex flex-row gap-6 lg:gap-10 mt-2">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
-                } hover:text-taupe text-[21px] font-medium font-mova 
+                } hover:text-taupe text-[16px] md:text-[16px] xmd:text-[18px] lg:text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -47,18 +47,18 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="hidden sm:flex flex-row gap-14 mt-2 ml-10">
+        <div className="hidden md:flex flex-row gap-6 lg:gap-10 mt-2 ml-4 lg:ml-10">
           <a
             href={resume}
             download="Resume_Vishwashankar_Data.pdf"
-            className="text-eerieBlack hover:text-taupe text-[21px] font-medium font-mova 
+            className="text-eerieBlack hover:text-taupe text-[16px] md:text-[16px] xmd:text-[18px] lg:text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links">
             Resume
           </a>
         </div>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="md:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 

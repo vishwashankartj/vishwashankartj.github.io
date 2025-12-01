@@ -37,7 +37,8 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Data Scientist/Engineer with 5+ years in implementing machine learning,
+        I bridge the gap between Big Data and advanced Machine Learning, specializing in high-performance model deployment.
+        I am a Data Scientist/Engineer with 5+ years in implementing machine learning,
         large language models, developing scalable ETL workflows and optimizing
         data storage solutions. Expertise in PySpark, ByteCloud, AWS,
         Databricks, Snowflake and Graph Analytics. Proven ability to deliver

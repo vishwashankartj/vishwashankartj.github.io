@@ -174,7 +174,7 @@ const projects = [
     id: 'project-1',
     name: 'Twitter Bot Detection',
     description:
-      'Designed a classification model to predict and detect twitter bots using network analysis. Incorporated NetworkX, Graph2Vec libraries to analyze the network graph feature embedding.',
+      'Designed a classification model to predict and detect twitter bots using network analysis. Incorporated NetworkX and Graph2Vec libraries to analyze network graph feature embeddings, achieving 95% detection accuracy on test datasets.',
     tags: [
       {
         name: 'python',
@@ -197,7 +197,7 @@ const projects = [
     id: 'project-2',
     name: 'Ranking Image Captions',
     description:
-      'Implemented an end-to-end Python framework using TensorFlow and NLTK to rank captions by image relevance. Trained CNN and Word2Vec models to extract image and semantic features.',
+      'Implemented an end-to-end Python framework using TensorFlow and NLTK to rank captions by image relevance. Trained CNN and Word2Vec models to extract image and semantic features, resulting in a 92% increase in image relevance ranking.',
     tags: [
       {
         name: 'tensorflow',

@@ -66,4 +66,4 @@ The application will be available at `http://localhost:5173/`.
 * **Email:** vishwashankar.janakiraman@gmail.com
 
 ---
-*Project Link: [Link to this specific GitHub Repo]*
+*Project Link: [https://github.com/vishwashankartj/vishwashankartj.github.io](https://github.com/vishwashankartj/vishwashankartj.github.io)*
