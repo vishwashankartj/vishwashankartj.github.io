@@ -17,7 +17,7 @@ const Contact = () => {
 
   // Initialize EmailJS
   useEffect(() => {
-    emailjs.init('yf0porVu4NEacj6TF');
+    emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   }, []);
 
   const handleChange = (e) => {
@@ -34,16 +34,16 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'service_bv3m9yn',
-        'template_uvjv4j1',
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: 'Vishwashankar',
           from_email: form.email,
-          to_email: 'vishwashankar.janakiraman@gmail.com',
+          to_email: import.meta.env.VITE_APP_EMAILJS_TO_EMAIL,
           message: form.message,
         },
-        'yf0porVu4NEacj6TF'
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {

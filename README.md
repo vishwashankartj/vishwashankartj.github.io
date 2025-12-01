@@ -58,6 +58,17 @@ The application will be available at `http://localhost:5173/`.
 * `/public` - Static assets (images, 3D models).
 * `/assets` - Project-specific media files.
 
+## 🚀 Deployment
+This project can be easily deployed on platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
+
+### Environment Variables
+For the contact form to work in production, you must configure the following environment variables in your deployment settings:
+
+*   `VITE_APP_EMAILJS_SERVICE_ID`
+*   `VITE_APP_EMAILJS_TEMPLATE_ID`
+*   `VITE_APP_EMAILJS_PUBLIC_KEY`
+*   `VITE_APP_EMAILJS_TO_EMAIL`
+
 ## 📬 Contact
 
 **Vishwashankar Janakiraman**
