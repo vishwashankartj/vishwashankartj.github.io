@@ -64,10 +64,12 @@ This project can be easily deployed on platforms like [Netlify](https://www.netl
 ### Environment Variables
 For the contact form to work in production, you must configure the following environment variables in your deployment settings:
 
-*   `VITE_APP_EMAILJS_SERVICE_ID`
-*   `VITE_APP_EMAILJS_TEMPLATE_ID`
-*   `VITE_APP_EMAILJS_PUBLIC_KEY`
-*   `VITE_APP_EMAILJS_TO_EMAIL`
+*   `EMAILJS_SERVICE_ID`
+*   `EMAILJS_TEMPLATE_ID`
+*   `EMAILJS_PRIVATE_KEY`
+*   `EMAILJS_TO_EMAIL`
+
+> **Important:** Since we are sending emails from a serverless function (Netlify), you must use your **Private Key** (found in Account > General) instead of the Public Key.
 
 ## 📬 Contact
 
