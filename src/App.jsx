@@ -11,7 +11,7 @@ import {
 
 const App = () => {
   return (
-    <BrowserRouter basename="/vishwashankarTJanakiraman.github.io">
+    <BrowserRouter>
       <div className="relative z-0">
         <div>
           <Navbar />
