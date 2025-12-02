@@ -37,7 +37,10 @@ const Tech = () => {
                         <img
                           src={technology.icon}
                           alt={technology.name}
-                          className="w-12 h-12 sm:w-20 sm:h-20 object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                          className={`w-12 h-12 sm:w-20 sm:h-20 grayscale group-hover:grayscale-0 transition-all duration-300 ${technology.name === 'Tableau'
+                              ? 'object-cover'
+                              : 'object-contain'
+                            }`}
                         />
                       </div>
                       <p className="text-secondary text-center text-sm mt-2 font-semibold">

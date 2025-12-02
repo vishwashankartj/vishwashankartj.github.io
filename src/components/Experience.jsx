@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, downloadHover, resume, resumeIcon } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -85,7 +85,7 @@ const Experience = () => {
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
-                  src={resume}
+                  src={resumeIcon}
                   alt="resume"
                   className="w-[45%] h-[45%] object-contain"
                 />
@@ -102,7 +102,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  resume,
                   '_blank'
                 )
               }
