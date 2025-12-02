@@ -48,7 +48,7 @@ const Hero = () => {
               I Build Scalable Data Systems and <br className="sm:block hidden" />
               Intelligent LLM Applications.
               <br className="block" />
-              <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Data Engineer</span>
+              <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Engineer</span>
             </p>
           </div>
           <div
