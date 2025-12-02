@@ -15,10 +15,7 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  // Initialize EmailJS
-  useEffect(() => {
-    emailjs.init('yf0porVu4NEacj6TF');
-  }, []);
+  // EmailJS initialization removed - using Netlify Function
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,21 +27,19 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
-    emailjs
-      .send(
-        'service_bv3m9yn',
-        'template_uvjv4j1',
-        {
-          from_name: form.name,
-          to_name: 'Vishwashankar',
-          from_email: form.email,
-          to_email: 'vishwashankar.janakiraman@gmail.com',
-          message: form.message,
-        },
-        'yf0porVu4NEacj6TF'
-      )
+    // Call Netlify Function
+    fetch('/.netlify/functions/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from_name: form.name,
+        to_name: 'Vishwashankar',
+        from_email: form.email,
+        message: form.message,
+      }),
+    })
       .then(
         () => {
           setLoading(false);

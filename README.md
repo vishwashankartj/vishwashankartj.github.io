@@ -58,12 +58,25 @@ The application will be available at `http://localhost:5173/`.
 * `/public` - Static assets (images, 3D models).
 * `/assets` - Project-specific media files.
 
+## 🚀 Deployment
+This project can be easily deployed on platforms like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
+
+### Environment Variables
+For the contact form to work in production, you must configure the following environment variables in your deployment settings:
+
+*   `EMAILJS_SERVICE_ID`
+*   `EMAILJS_TEMPLATE_ID`
+*   `EMAILJS_PRIVATE_KEY`
+*   `EMAILJS_TO_EMAIL`
+
+> **Important:** Since we are sending emails from a serverless function (Netlify), you must use your **Private Key** (found in Account > General) instead of the Public Key.
+
 ## 📬 Contact
 
 **Vishwashankar Janakiraman**
 
 * **LinkedIn:** [https://www.linkedin.com/in/vishwashankar-janakiraman/](https://www.linkedin.com/in/vishwashankar-t-janakiraman/)
-* **Email:** vishwashankar.janakiraman@gmail.com
+* **Email:** [Contact Me](https://vishwashankartj.github.io/#contact)
 
 ---
 *Project Link: [https://github.com/vishwashankartj/vishwashankartj.github.io](https://github.com/vishwashankartj/vishwashankartj.github.io)*
