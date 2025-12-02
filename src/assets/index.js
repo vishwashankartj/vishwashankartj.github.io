@@ -6,7 +6,7 @@ import worldmap from './backgrounds/world-map.png';
 import logo from './logo/logo-TJ.png';
 import logotext from './logo/logo-text-Vishwa.png';
 
-import shaq from './personal/Vishwa-portrait2.png';
+import shaq from './personal/Vishwa-portrait3.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';

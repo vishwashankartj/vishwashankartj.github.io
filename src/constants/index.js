@@ -69,10 +69,12 @@ const services = [
   {
     title: 'Data Science and AI',
     icon: backend,
+    description: "Specializing in high-performance model deployment, LLM applications, and advanced machine learning algorithms. Experience with graph analytics, NLP, and deep learning.",
   },
   {
     title: 'Data Engineering',
     icon: prototyping,
+    description: "Designing and developing complex ETL workflows, data pipelines, and scalable storage solutions. Expertise in Databricks, AWS, and optimizing data processing efficiency.",
   },
 ];
 
@@ -129,7 +131,7 @@ const experiences = [
   },
   {
     title: 'Data Scientist/Engineer',
-    company_name: 'ADP Inc.',
+    company_name: 'ADP Inc',
     icon: adp,
     iconBg: '#333333',
     date: 'July 2021 - Feb 2024',
@@ -142,7 +144,7 @@ const experiences = [
   },
   {
     title: 'Data Science Intern',
-    company_name: 'ADP Inc.',
+    company_name: 'ADP Inc',
     icon: adp,
     iconBg: '#333333',
     date: 'June 2020 - Aug 2020',
@@ -154,7 +156,7 @@ const experiences = [
   },
   {
     title: 'Software Developer Intern',
-    company_name: 'Infosys Ltd.',
+    company_name: 'Infosys Ltd',
     icon: infosys,
     iconBg: '#333333',
     date: 'Dec 2018 - May 2019',
