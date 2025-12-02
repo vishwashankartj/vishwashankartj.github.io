@@ -50,7 +50,8 @@ const Navbar = () => {
         <div className="hidden md:flex flex-row gap-6 lg:gap-10 mt-2 ml-4 lg:ml-10">
           <a
             href={resume}
-            download="Resume_Vishwashankar_Data.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-eerieBlack hover:text-taupe text-[16px] md:text-[16px] xmd:text-[18px] lg:text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links">
             Resume
@@ -101,7 +102,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </nav>
+    </nav >
   );
 };
 

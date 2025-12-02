@@ -48,7 +48,7 @@ const Hero = () => {
               I Build Scalable Data Systems and <br className="sm:block hidden" />
               Intelligent LLM Applications.
               <br className="block" />
-              <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Data Engineer</span>
+              <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Engineer</span>
             </p>
           </div>
           <div
@@ -83,7 +83,7 @@ const Hero = () => {
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div className="absolute bottom-0 right-0 
-          w-full h-[40vh] md:w-[45vw] md:h-[50vh] lg:h-[80vh]
+          w-full h-[40vh] md:w-[55vw] md:h-[50vh] lg:h-[80vh]
           overflow-hidden">
           <img
             className="absolute bottom-0 right-0 
