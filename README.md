@@ -76,7 +76,7 @@ For the contact form to work in production, you must configure the following env
 **Vishwashankar Janakiraman**
 
 * **LinkedIn:** [https://www.linkedin.com/in/vishwashankar-janakiraman/](https://www.linkedin.com/in/vishwashankar-t-janakiraman/)
-* **Email:** vishwashankar.janakiraman@gmail.com
+* **Email:** [Contact Me](https://vishwashankartj.github.io/#contact)
 
 ---
 *Project Link: [https://github.com/vishwashankartj/vishwashankartj.github.io](https://github.com/vishwashankartj/vishwashankartj.github.io)*
