@@ -51,13 +51,13 @@ const ProjectCard = ({
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-3">
               <div
-                onClick={() => window.open(repo, '_blank')}
+                onClick={() => window.open(demo, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
                   flex justify-center items-center cursor-pointer
                   sm:opacity-[0.9] opacity-[0.8]">
                 <img
-                  src={github}
-                  alt="source code"
+                  src={pineapple}
+                  alt="live demo"
                   className="w-4/5 h-4/5 object-contain"
                 />
               </div>
@@ -77,30 +77,20 @@ const ProjectCard = ({
             <button
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
+              font-bold font-beckman items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1 w-fit sm:h-[50px] 
+              h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() => window.open(demo, '_blank')}
-              onMouseOver={() => {
-                document
-                  .querySelector('.btn-icon')
-                  .setAttribute('src', pineappleHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.btn-icon')
-                  .setAttribute('src', pineapple);
-              }}>
+              onClick={() => window.open(repo, '_blank')}>
               <img
-                src={pineapple}
-                alt="pineapple"
+                src={github}
+                alt="github"
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
                   w-[30px] h-[30px] object-contain"
               />
-              LIVE DEMO
+              GITHUB
             </button>
           </div>
         </>
@@ -123,11 +113,10 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          These projects demonstrate my expertise through practical examples of
+          real-world applications. Each showcases my ability to tackle complex
+          technical challenges, work with diverse technology stacks, and deliver
+          end-to-end solutions from concept to deployment.
         </motion.p>
       </div>
 
