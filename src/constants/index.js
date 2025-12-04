@@ -170,9 +170,55 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
+    name: 'Investigator AI Agent',
+    description:
+      'Built an intelligent multi-agent system using LangGraph that automates fraud investigation workflows. The system uses 4 specialized agents for triage, risk scoring, narrative generation, and policy-based recommendations, achieving dynamic risk assessment across 150M+ entities.',
+    tags: [
+      {
+        name: 'langgraph',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'llm',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'rag',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: komikult,
+    repo: 'https://github.com/vishwashankartj/LangGraph-Risk-Case-Investigator-AIAgent',
+    demo: 'https://github.com/vishwashankartj/LangGraph-Risk-Case-Investigator-AIAgent',
+  },
+  {
+    id: 'project-2',
+    name: 'Gen AI Chat Suite',
+    description:
+      'Developed a self-hosted LLM chat application with Open WebUI frontend, Ollama engine, and custom FastAPI backend for RAG and agent capabilities. Containerized architecture with MongoDB for data persistence and seamless local LLM deployment.',
+    tags: [
+      {
+        name: 'fastapi',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'ollama',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'docker',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: leaderboard,
+    repo: 'https://github.com/vishwashankartj/Ollama-Fastapi-AIChat-Suite',
+    demo: 'https://github.com/vishwashankartj/Ollama-Fastapi-AIChat-Suite',
+  },
+  {
+    id: 'project-3',
     name: 'Twitter Bot Detection',
     description:
-      'Designed a classification model to predict and detect twitter bots using network analysis. Incorporated NetworkX and Graph2Vec libraries to analyze network graph feature embeddings, achieving 95% detection accuracy on test datasets.',
+      'Built a sophisticated bot detection system that analyzes Twitter network graphs using custom Graph2Vec embeddings with Weisfeiler-Lehman kernels. Ensemble ML model combining Random Forest, SVM, and Neural Networks achieves 100% precision or 77% recall depending on use case.',
     tags: [
       {
         name: 'python',
@@ -187,12 +233,35 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/vishwashankartj',
-    demo: 'https://vishwashankartj.github.io/',
+    image: math,
+    repo: 'https://github.com/vishwashankartj/Twitter-Bot-Detection',
+    demo: 'https://github.com/vishwashankartj/Twitter-Bot-Detection',
   },
   {
-    id: 'project-2',
+    id: 'project-4',
+    name: 'Sleep Stage Prediction',
+    description:
+      'Implemented a CNN-LSTM deep learning model to predict sleep stages (Wake, N1, N2, N3, REM) from single-channel EEG data. Model processes 30-second EEG epochs at 100Hz, using convolutional layers for feature extraction and LSTM for temporal dynamics, with FastAPI service deployment.',
+    tags: [
+      {
+        name: 'lstm',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'healthcare',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'time-series',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nyeusi,
+    repo: 'https://github.com/vishwashankartj/Sleep-Stage-Prediction',
+    demo: 'https://github.com/vishwashankartj/Sleep-Stage-Prediction',
+  },
+  {
+    id: 'project-5',
     name: 'Ranking Image Captions',
     description:
       'Implemented an end-to-end Python framework using TensorFlow and NLTK to rank captions by image relevance. Trained CNN and Word2Vec models to extract image and semantic features, resulting in a 92% increase in image relevance ranking.',
@@ -210,53 +279,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard, // Placeholder
-    repo: 'https://github.com/vishwashankartj',
-    demo: 'https://vishwashankartj.github.io/',
-  },
-  {
-    id: 'project-3',
-    name: 'Adversarial Attacks on DNN',
-    description:
-      'Implemented a black-box attack on target model and created a substitute model to learn the target model\'s weights. Achieved a test accuracy of 82% on adversarial data.',
-    tags: [
-      {
-        name: 'pytorch',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'security',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'ai',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math, // Placeholder
-    repo: 'https://github.com/vishwashankartj',
-    demo: 'https://vishwashankartj.github.io/',
-  },
-  {
-    id: 'project-4',
-    name: 'Sleep Stage Prediction',
-    description:
-      'Designed a model to predict sleep levels using EEG, EOG and EMG medical data. Developed a LSTM time-series deep learning model achieving 85% accuracy.',
-    tags: [
-      {
-        name: 'lstm',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'healthcare',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'time-series',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie, // Placeholder
+    image: movie,
     repo: 'https://github.com/vishwashankartj',
     demo: 'https://vishwashankartj.github.io/',
   },

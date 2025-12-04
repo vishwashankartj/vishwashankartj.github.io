@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-import { send, sendHover } from '../assets';
+import { send, sendHover, github, linkedin } from '../assets';
 
 const Contact = () => {
   const formRef = useRef();
@@ -68,6 +68,26 @@ const Contact = () => {
         className="flex-[0.75] bg-jet p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadTextLight}>Contact.</h3>
+
+        {/* Social Media Links */}
+        <div className="mt-6 flex gap-5">
+          <a
+            href="https://github.com/vishwashankartj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-night flex justify-center items-center 
+            hover:bg-battleGray hover:scale-110 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
+            <img src={github} alt="GitHub" className="w-7 h-7 object-contain" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vishwashankar-t-janakiraman/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-night flex justify-center items-center 
+            hover:bg-battleGray hover:scale-110 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
+            <img src={linkedin} alt="LinkedIn" className="w-9 h-9 object-contain" />
+          </a>
+        </div>
 
         <form
           ref={formRef}

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { shaq, bwmap, worldmap, github, linkedin } from '../assets';
 
 const Hero = () => {
   return (
@@ -50,6 +50,26 @@ const Hero = () => {
               <br className="block" />
               <span className="text-eerieBlack text-[20px] font-bold">Data Scientist | Engineer</span>
             </p>
+
+            {/* Social Media Links */}
+            <div className="mt-6 flex gap-5">
+              <a
+                href="https://github.com/vishwashankartj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-night flex justify-center items-center 
+            hover:bg-battleGray hover:scale-110 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
+                <img src={github} alt="GitHub" className="w-7 h-7 object-contain" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vishwashankar-t-janakiraman/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-night flex justify-center items-center 
+            hover:bg-battleGray hover:scale-110 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
+                <img src={linkedin} alt="LinkedIn" className="w-9 h-9 object-contain" />
+              </a>
+            </div>
           </div>
           <div
             className="w-screen flex flex-col items-start 
