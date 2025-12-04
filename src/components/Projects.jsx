@@ -22,16 +22,16 @@ const ProjectCard = ({
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
         } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow`}
+      h-[420px] cursor-pointer card-shadow overflow-hidden`}
       onClick={() => handleClick(id)}>
       <div
-        className="absolute top-0 left-0 z-10 bg-jetLight 
-      h-full w-full opacity-[0.5] rounded-[24px]"></div>
+        className="absolute top-0 left-0 z-10 bg-black 
+      h-full w-full opacity-[0.75] rounded-[24px]"></div>
 
       <img
         src={image}
         alt={name}
-        className="absolute w-full h-full object-cover rounded-[24px]"
+        className="absolute w-full h-full object-cover rounded-[24px] blur-[2px]"
       />
 
       {active !== id ? (
@@ -47,7 +47,7 @@ const ProjectCard = ({
       ) : (
         <>
           <div
-            className="absolute bottom-0 p-8 justify-start w-full 
+            className="absolute top-0 left-0 right-0 bottom-0 p-8 flex justify-end 
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-3">
               <div

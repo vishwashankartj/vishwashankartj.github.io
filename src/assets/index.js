@@ -66,11 +66,11 @@ import tiktok from './company/tiktok.png';
 import adp from './company/adp.png';
 import infosys from './company/infosys.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
+import investigatorAI from './projects/investigator-ai-agent.png';
+import genAIChat from './projects/genai-chat-suite.png';
+import twitterBot from './projects/twitter-bot-detection.png';
+import sleepStage from './projects/sleep-stage-prediction.png';
+import imageCaption from './projects/ranking-image-captions.png';
 import space from './projects/space-hub.png';
 
 export {
@@ -129,11 +129,11 @@ export {
   bytecloud,
   langgraph,
   openwebui,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
+  investigatorAI,
+  genAIChat,
+  twitterBot,
+  sleepStage,
+  imageCaption,
   space,
   coverhunt,
   dcc,
