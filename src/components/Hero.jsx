@@ -40,7 +40,8 @@ const Hero = () => {
               <span
                 className="sm:text-battleGray sm:text-[35px] md:text-[40px] xmd:text-[60px] lg:text-[75px] xl:text-[90px]
                 text-eerieBlack text-[35px] font-mova
-                font-extrabold uppercase">
+                font-extrabold uppercase cursor-pointer transition-colors duration-300 ease-in-out
+                hover:text-[#0891b2]">
                 Vishwashankar
               </span>
             </h1>
