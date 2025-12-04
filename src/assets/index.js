@@ -58,10 +58,6 @@ import bytecloud from './tech/bytecloud.png';
 import langgraph from './tech/langgraph.png';
 import openwebui from './tech/openwebui.png';
 
-import coverhunt from './company/coverhunt.png';
-import dcc from './company/dcc.png';
-import kelhel from './company/kelhel.png';
-import microverse from './company/microverse.png';
 import tiktok from './company/tiktok.png';
 import adp from './company/adp.png';
 import infosys from './company/infosys.png';
@@ -71,7 +67,6 @@ import genAIChat from './projects/genai-chat-suite.png';
 import twitterBot from './projects/twitter-bot-detection.png';
 import sleepStage from './projects/sleep-stage-prediction.png';
 import imageCaption from './projects/ranking-image-captions.png';
-import space from './projects/space-hub.png';
 
 export {
   bwmap,
@@ -134,11 +129,6 @@ export {
   twitterBot,
   sleepStage,
   imageCaption,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
   tiktok,
   adp,
   infosys,
