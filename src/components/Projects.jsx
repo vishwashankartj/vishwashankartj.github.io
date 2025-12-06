@@ -35,21 +35,21 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-center px-4 w-full">
+        <div className="flex items-center justify-center px-2 sm:px-4 w-full overflow-hidden">
           <h3
             className="font-extrabold font-beckman uppercase text-center
-        sm:text-[27px] text-[14px] text-timberWolf tracking-[1px]
+        sm:text-[27px] text-[12px] text-timberWolf tracking-[1px]
         lg:absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
         lg:w-[200px] lg:whitespace-nowrap lg:text-left
-        leading-tight z-20">
+        leading-tight z-20 break-words hyphens-auto max-w-full">
             {name}
           </h3>
         </div>
       ) : (
         <>
           <div
-            className="absolute top-0 left-0 right-0 bottom-0 p-8 flex justify-end 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
+            className="absolute top-0 left-0 right-0 bottom-0 p-4 sm:p-8 flex justify-end 
+            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20 overflow-hidden">
             <div className="absolute inset-0 flex justify-end m-3">
               <div
                 onClick={() => window.open(demo, '_blank')}
@@ -65,8 +65,8 @@ const ProjectCard = ({
             </div>
 
             <h2
-              className="font-bold sm:text-[32px] text-[24px] 
-              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+              className="font-bold sm:text-[32px] text-[18px] 
+              text-timberWolf uppercase font-beckman mt-0">
               {name}
             </h2>
             <p
@@ -81,7 +81,7 @@ const ProjectCard = ({
               font-bold font-beckman items-center py-5 pl-3 pr-3 
               whitespace-nowrap gap-1 w-fit sm:h-[50px] 
               h-[46px] rounded-[10px] glassmorphism 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
+              sm:mt-[22px] mt-[10px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
               onClick={() => window.open(repo, '_blank')}>
