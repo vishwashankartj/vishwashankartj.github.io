@@ -35,12 +35,13 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
+        <div className="flex items-center justify-center px-4 w-full">
           <h3
-            className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
-        absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20">
+            className="font-extrabold font-beckman uppercase text-center
+        sm:text-[27px] text-[14px] text-timberWolf tracking-[1px]
+        lg:absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
+        lg:w-[200px] lg:whitespace-nowrap lg:text-left
+        leading-tight z-20">
             {name}
           </h3>
         </div>

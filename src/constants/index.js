@@ -111,21 +111,22 @@ const technologies = {
 
 const experiences = [
   {
-    title: 'Senior Data Scientist',
+    title: 'Senior Data Scientist / Developer',
     company_name: 'TikTok',
     icon: tiktok,
     iconBg: '#333333',
     date: 'Feb 2024 - Present',
     points: [
-      'Designed and deployed a community detection algorithm to cluster over 150M+ users, IP addresses, and government-issued IDs, improving financial crime investigation coverage by 65% and reducing investigation time by 30%.',
-      'Built a custom graph traversal algorithm to surface high-risk sub-networks among suspicious entities, accelerating triage for flagged accounts and contributing to a 45% increase in detection of coordinated fraud patterns.',
-      'Developed and productionized anomaly detection models using Isolation Forest, assigning dynamic risk scores to 500M+ users, transactions/month in the TikTok Live network.',
-      'Deployed LLM models and vector embeddings using ByteCloud containers on NVIDIA A100 GPUs, exposing them as low-latency API endpoints.',
-      'Built a Retrieval-Augmented Generation (RAG) LLM chatbot to generate automated investigative reports from scored and traversed high-risk networks.',
+      'Architected and deployed an AI Agent based on a Retrieval-Augmented Generation (RAG) LLM framework for an AML virtual assistant that reduced report generation time by 90% and enabled near real-time queries for risk triage.',
+      'Architected the development and deployment of a graph-based financial crime detection system using custom algorithms like Community Detection and Graph Traversal for risk scoring and entity resolution across 150M+ entities.',
+      'Conducted A/B testing, drift analysis, and parameter tuning on financial crime models, establishing robust decision boundaries and managing risk coverage across 500M+ monthly transactions.',
+      'Successfully tuned the production anomaly detection system (using Isolation Forest) for the TikTok Live network, leading to a significant 20% reduction in false positives while maintaining detection accuracy.',
+      'Deployed LLM models and vector embeddings via ByteCloud containers on NVIDIA H100 GPUs, developing low-latency Internal API endpoints 5K QPM to maintain security compliance by avoiding external model hosting.',
+      'Automated the discovery and classification of sensitive PII data across 2M+ internal databases by leveraging ML-based entity recognition and fine-tuned LLM classification models using predefined Data Taxonomy tags, reducing manual efforts by 80%.',
     ],
   },
   {
-    title: 'Data Scientist/Engineer',
+    title: 'Data Scientist / Engineer',
     company_name: 'ADP Inc',
     icon: adp,
     iconBg: '#333333',
